@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+--------|
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
   //|--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+--------|
-                                   KC_NO,   KC_NO, KC_TRNS,          KC_TRNS, KC_BSPC,   KC_NO
+                                 KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, KC_BSPC, KC_TRNS
   //                           |--------+--------+--------|        |--------+--------+--------|
     ),
 
@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+--------|
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
   //|--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+--------|
-                                   KC_NO,   KC_NO,   MO(3),          KC_TRNS, KC_BSPC,   KC_NO
+                                 KC_TRNS, KC_TRNS,   MO(3),          KC_TRNS,  KC_SPC, KC_TRNS
   //                           |--------+--------+--------|        |--------+--------+--------|
     ),
 
@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+--------|
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,
   //|--------+--------+--------+--------+--------+--------|        |--------+--------+--------+--------+--------+--------|
-                                   KC_NO,   KC_NO, KC_TRNS,          KC_TRNS,   KC_NO,   KC_NO
+                                 KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS, KC_TRNS
   //                           |--------+--------+--------|        |--------+--------+--------|
     )
     // clang-format on
