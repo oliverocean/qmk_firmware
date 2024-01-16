@@ -58,26 +58,12 @@ Flash
 ```zsh
 # Elite-C is an Atmel atmega32u4 chip, model ATm32U4DFU
 
-$ qmk flash
-
 # new boards may need to be force erased first
-
-Checking file size of crkbd_rev1_oliverocean.hex                                                    [OK]
- * The firmware size is fine - 25716/28672 (89%, 2956 bytes free)
-Flashing for bootloader: atmel-dfu
-Bootloader Version: 0x00 (0)
-Checking memory from 0x0 to 0x6FFF...  Empty.
-Chip already blank, to force erase use --force.
-Checking memory from 0x0 to 0x647F...  Empty.
-0%                            100%  Programming 0x6480 bytes...
-[ X  ERROR
-Memory write error, use debug for more info.
-
 $ dfu-programmer atmega32u4 erase --force
 Erasing flash...  Success
 Checking memory from 0x0 to 0x6FFF...  Empty.
 
-# run flash again and it should work
+# flash at command line or with QMK toolbox (on MacOS)
 $ qmk flash
 
 Ψ Compiling keymap with make -r -R -f builddefs/build_keyboard.mk -s flash KEYBOARD=crkbd/rev1 KEYMAP=oliverocean KEYBOARD_FILESAFE=crkbd_rev1 TARGET=crkbd_rev1_oliverocean INTERMEDIATE_OUTPUT=.build/obj_crkbd_rev1_oliverocean VERBOSE=false COLOR=true SILENT=false QMK_BIN="qmk"
