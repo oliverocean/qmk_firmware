@@ -1,7 +1,7 @@
 #pragma once
 
-#define MASTER_LEFT
-// #define SPLIT_USB_DETECT
+// #define MASTER_LEFT
+#define SPLIT_USB_DETECT
 
 #define TAPPING_FORCE_HOLD
 #define TAPPING_TERM 100

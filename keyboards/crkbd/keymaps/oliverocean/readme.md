@@ -15,17 +15,13 @@ setup repo and config
 # clone repo
 $ git clone <repo on github>
 
+# install udev rules and reboot
+$ sudo cp ~/src/oo/qmk_firmware/util/udev/50-qmk.rules /etc/udev/rules.d/.
+# note: udev rules can be skipped if you flash with another system (i.e. MacOS)
+
 # config home
 $ qmk setup -H <path to repo>
-
-# review config
-$ qmk config
-
-find.keymap=default
-mass_compile.keymap=default
-user.keyboard=crkbd
-user.keymap=oliverocean
-user.qmk_home=/home/poseidon/src/oo/qmk_firmware
+# yes to set qmk home and to clone submodules
 
 ```
 
@@ -37,14 +33,25 @@ qmk config user.keyboard=crkbd
 # set default keymap
 qmk config user.keymap=oliverocean
 
-# create new keymap
-qmk new-keymap
+# review config
+$ qmk config
+find.keymap=default
+mass_compile.keymap=default
+user.keyboard=crkbd
+user.keymap=oliverocean
+user.qmk_home=/home/poseidon/src/oo/qmk_firmware
 
-# modify
+# edit/modify keymap
 nvim keyboards/crkbd/keymaps/oliverocean/keymap.c
+
+# or create new keymap (if needed)
+qmk new-keymap
 
 # compile
 qmk compile
+
+# copy new `hex` file to `bins` folder for posterity (and to flash via another system)
+
 ```
 
 Flash
